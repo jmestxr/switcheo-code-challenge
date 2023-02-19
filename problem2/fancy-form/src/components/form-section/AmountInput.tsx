@@ -7,7 +7,7 @@ export const AmountInput = () => {
 
   useEffect(() => {
     const pretiffyNumber = (num: string) => {
-      return dePretiffyNumber(num).replace(/\d(?=(?:\d{3})+$)/g, "$&,");
+      return num.replace(/\d(?=(?:\d{3})+$)/g, "$&,");
     };
     const dePretiffyNumber = (num: string) => {
       return num.replace(/\,/g, "");
@@ -15,7 +15,11 @@ export const AmountInput = () => {
 
     const resizeInput = (e: Event) => {
       if (inputRef.current) {
-        inputRef.current.value = pretiffyNumber(inputRef.current.value);
+        let inputVal = inputRef.current.value ? dePretiffyNumber(inputRef.current.value) : "";
+        if (inputVal) { 
+          inputVal = /^-?\d+$/.test(inputVal) ? inputVal : inputVal.slice(0, -1);
+        }
+        inputRef.current.value = inputVal ? pretiffyNumber(parseInt(inputVal).toString()) : "";
         inputRef.current.style.width = inputRef.current.value.length + "ch";
       }
     };
