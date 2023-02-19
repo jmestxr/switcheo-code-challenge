@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap');
+
+:root {
+  /* ========================== COLOR THEME ========================== */
+  --white: #EEEEEE;
+  --grey: #a19d9d;
+  --black: #303841;
+  --blue: #00ADB5;
+  --blue-translucent: #00ADB520;
+  --orange: #FF5722;
+
+  /* ========================== TYPOGRAPHY ========================== */
+  --default-font-size: 12px;
+  --regular: 400;
+  --medium: 500;
+  --semibold: 600;
+  --bold: 700;
+  --extrabold: 800;
+  --line-height: 1.8rem;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  color: var(--blue);
+  font-family: "Nunito", Helvetica, Arial, sans-serif;
+  font-weight: var(--regular);
+  font-size: var(--default-font-size);
+  line-height: var(--line-height);
+}
+
+.h1,
+.h2 {
+  font-weight: 700;
+}
+
+.h1 {
+ font-size: 3.5rem;
+}
+
+.h2 {
+  font-size: 3rem;
+}
+
+.h3 {
+  font-size: 2.5rem;
+}
+
+.p1 {
+  font-size: 3rem;
+}
+
+.p2 {
+  font-size: 2.5rem;
+}
+
+.p3 {
+  font-size: 1.5rem;
+}

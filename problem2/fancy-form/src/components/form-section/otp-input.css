@@ -1,0 +1,21 @@
+.input-otp-digit {
+    width: 75px;
+    height: 100px;
+    margin: 1.5rem;
+    text-align: center;
+    color: var(--grey);
+    border-radius: 10px;
+    border: 2px solid var(--blue);
+    transition: 0.2s;
+}
+.input-otp-digit:focus {
+    outline: none;
+    background-color: var(--blue-translucent);
+}
+
+/* Chrome, Safari, Edge, Opera */
+.input-otp-digit::-webkit-outer-spin-button,
+.input-otp-digit::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

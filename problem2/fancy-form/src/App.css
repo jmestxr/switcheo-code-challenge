@@ -1,0 +1,43 @@
+#app {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+}
+
+#form-app {
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+#form-app::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+#form-app {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.submit-button {
+  cursor: pointer;
+  position: absolute;
+  bottom: 100px;
+  padding: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  color: var(--white);
+  background-color: var(--orange);
+  transition: 0.2s;
+}
+.submit-button:hover {
+  opacity: 0.8;
+}
+.submit-button:focus {
+  outline: none;
+}

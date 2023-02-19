@@ -1,0 +1,12 @@
+.form-section {
+  width: 100vw;
+  display: inline-block;
+  margin: auto;
+}
+
+.form-section-label {
+  padding: 2rem 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}

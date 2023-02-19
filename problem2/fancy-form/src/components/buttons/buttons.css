@@ -1,0 +1,20 @@
+.nav-button {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--orange);
+    transition: 0.2s;
+}
+.nav-button:hover {
+    opacity: 0.8;
+}
+
+.nav-button-icon {
+    height: 3rem;
+    width: auto;
+}
